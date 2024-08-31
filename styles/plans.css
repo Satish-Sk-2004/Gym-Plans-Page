@@ -62,11 +62,6 @@ nav ul li a:hover {
 
 nav ul li a.active {
     color: black;
-    border-bottom: 2px solid black;
-}
-
-nav ul li a.active:hover {
-    border-bottom: 2px solid #1c96c3;
 }
 
 .checkbtn {
@@ -110,7 +105,7 @@ main {
 .basic-plan{
     height: 20vh;
     margin-top: -90px;
-    margin-left: 16%;
+    margin-right: 60%;
 }
 
 .premium-plan{
@@ -297,10 +292,6 @@ main {
     nav ul li a.active {
         background: none;
         color: #1c96c3;
-    }
-
-    nav ul li a.active {
-        border-bottom: 2px solid #1c96c3;
     }
 
     #check:checked ~ ul {
