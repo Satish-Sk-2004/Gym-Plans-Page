@@ -100,18 +100,30 @@ main {
     gap: 30px;
     padding: 30px;
     margin: 0 20px;
+    position: relative;
 }
 
 .basic-plan{
-    height: 20vh;
-    margin-top: -90px;
-    margin-right: 60%;
+    height: 150px;
+    transition: 0.6s;
+}
+
+.plan1-img {
+    display: flex;
+    flex-direction: row-reverse;
+    gap:-50px;
+    margin-left: -130px;
+}
+
+.plan2-img {
+    display: flex;
+    flex-direction: row;
+    gap:-50px;
+    margin-right: -130px;
 }
 
 .premium-plan{
-    height: 20vh;
-    margin-top: -90px;
-    margin-left: 60%;
+    height: 150px;
 }
 
 .plan-row {
@@ -140,6 +152,7 @@ main {
 
 .plan-details {
     padding: 30px;
+    padding-bottom: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,6 +245,7 @@ main {
 
 .join-now {
     margin-top: 20px;
+    margin-left: -20px;
     text-align: center;
 }
 
@@ -306,6 +320,7 @@ main {
 @media (max-width: 480px) {
     .plan-details {
         padding: 20px;
+        padding-bottom: 0%;
     }
 
     .price {
@@ -314,5 +329,16 @@ main {
 
     .month {
         font-size: 18px;
+    }
+}
+@media (max-width: 420px) {
+    .basic-plan , .premium-plan{
+        opacity: 0;
+        height: 0;
+        transition: 0.6s;
+
+    }
+    .plan1-img, .plan2-img{
+        margin: 0;
     }
 }
